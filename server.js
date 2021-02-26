@@ -2,8 +2,14 @@ const http = require('http')
 const fs = require('fs')
 let path = require ('path')
 const express = require('express');
+let app = express();
 
 const PORT = 3000;
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+
 const server = http.createServer(handleRequest);
 
 function handleRequest(req, res) {
