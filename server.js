@@ -1,21 +1,12 @@
-const http = require('http')
-const fs = require('fs')
 const express = require('express');
+let path = require ('path')
+let app = express();
 
 const PORT = 3000;
-const server = http.createServer(handleRequest);
 
-function handleRequest(req, res) {
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-    // Here we use the fs package to read our index.html file
-    fs.readFile(__dirname + "/index.html", function (err, data) {
-        if (err) throw err;
-        // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
-        // an html file.
-        res.writeHead(200, { "Content-Type": "text/html" });
-        res.end(data);
-    });
-}
 
 let reservations = [{
     routeName: "",
@@ -42,24 +33,15 @@ app.get("/table", function (req, res) {
 });
 
 app.get("/reservation", function (req, res) {
-    res.sendFile(path.join(__dirname, "table.html"));
+    res.sendFile(path.join(__dirname, "reservation.html"));
 });
 
+app.post("/api/reservation", (req, res) => {
+    var data = req.body;
+    console.log(data);
+   
+});
 
-
-// const showHomepage = (req, res) => {
-//     fs.readFile("./index.html", "utf8", (err, data) => {
-//         if (err){
-//             res.writeHead(500, {"Content-Type": "text/html"});
-//             res.end(data);
-//         }
-
-//     })
-
-// }
-
-
-
-server.listen(PORT, function () {
+app.listen(PORT, function () {
     console.log("Server is listening on PORT: " + PORT);
 })
