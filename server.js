@@ -9,19 +9,17 @@ app.use(express.json());
 
 
 let reservations = [{
-    routeName: "",
     name: "",
-    time: "19:00",
-    email: 900,
-    phone: 2000,
+    PhoneNumber: "",
+    email: " ",
+    uniqueId: " ",
 }]
 
 let table = [{
-    routeName: "",
-    name: "",
-    time: "19:00",
-    email: 900,
-    phone: 2000,
+    1: " ",
+    2: " ",
+    3: " ",
+    4: " ",
 }]
 
 app.get("/index", function (req, res) {
@@ -39,6 +37,7 @@ app.get("/reservation", function (req, res) {
 app.post("/api/reservation", (req, res) => {
     var data = req.body;
     console.log(data);
+    reservations.push()
    
 });
 
