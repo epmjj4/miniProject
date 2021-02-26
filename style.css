@@ -36,7 +36,7 @@ p{
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 21em;}
+  to{width: 25em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -74,6 +74,11 @@ p{
 .reservationButtonn:active {
 	position:relative;
 	top:1px;
+}
+.restaurant{
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
 }
 
 /* table css */
