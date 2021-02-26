@@ -1,0 +1,62 @@
+
+.jumbotron {
+    background-color: rgb(236, 235, 235);
+    padding: 20px;
+    margin-bottom: 20px;
+    
+
+}
+
+.homeBtn {
+    
+	box-shadow: 0px 10px 14px -7px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:20px 37px;
+	text-decoration:none;
+	text-shadow:1px 1px 1px #040507;
+}
+.homeBtn:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.homeBtn:active {
+	position:relative;
+	top:1px;
+}
+
+.reservationBtn {
+	box-shadow: 0px 10px 14px -7px #e67a73;
+	background:linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
+	background-color:#e4685d;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:20px 37px;
+	text-decoration:none;
+	text-shadow:1px 1px 1px #030303;
+}
+.reservationBtn:hover {
+	background:linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+	background-color:#eb675e;
+}
+.reservationBtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+        

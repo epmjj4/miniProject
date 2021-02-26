@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Hot Restaurant</title>
-</head>
-<body>
-    <h1>Hot Restaurant</h1>
-    <p>Everyone Book Your Seat Before It Disappears</p>
-    <button><a href = "index.html">Home</a></button>
-    <button><a href = "reservation.html">Make Reservation</a></button>
-    <div>
+  </head>
+  <body>
+    <div class="entire-container col-12 d-flex justify-content-center">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Hot Restaurant</h1>
+          <p class="lead">Everyone Book Your Seat Before It Disappears</p>
+          <button class="homeBtn"><a href="index.html" style="color:white;">Home</a></button>
+          <button class="reservationBtn">
+            <a href="reservation.html" style="color:white;">Make Reservation</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="entire-container col-12 d-flex justify-content-center">
+      <div>
         <h2>Current Reservations</h2>
         <div>
-          <div class=“card employee-card”>
-            <div class=“card-header”>
-              <h2 class=“card-title” placeholder=“Table #“>Table #</h2>
+          <div class="“card" employee-card”>
+            <div class="“card-header”">
+              <h2 class="“card-title”" id="table-num">Table #</h2>
             </div>
-            <div class=“card-body”>
-              <ul class=“list-group”>
-                <li class=“list-group-item” id=“customer-id”>ID:</li>
-                <li class=“list-group-item” id=“customer-name”>Name:</li>
-                <li class=“list-group-item” id=“customer-email”>Email:</li>
-                <li class=“list-group-item” id=“customer-phone”>Phone:</li>
+            <div class="“card-body”">
+              <ul class="“list-group”">
+                <li class="“list-group-item”" id="“customer-id”">ID:</li>
+                <li class="“list-group-item”" id="“customer-name”">Name:</li>
+                <li class="“list-group-item”" id="“customer-email”">Email:</li>
+                <li class="“list-group-item”" id="“customer-phone”">Phone:</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
       <div>
         <h3>Waiting List</h3>
-        <div class=“card-body”>
-          <ul class=“list-group”>
-            <li class=“list-group-item”></li>
+        <div class="“card-body”">
+          <ul class="“list-group”">
+            <li class="“list-group-item”"></li>
           </ul>
         </div>
       </div>
-</body>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
